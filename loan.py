@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the trained model
-print("File path:", '/content/Projecttest.csv.pkl')
+file_path = '/content/Projecttest.csv.pkl'
 with open('/content/Projecttest.csv.pkl', 'rb') as file:
     LR = pickle.load(file)
 
