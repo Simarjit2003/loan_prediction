@@ -2,11 +2,15 @@ import pickle
 import streamlit as st
 import pandas as pd
 
+# Load the trained model
+with open('/content/Projecttest.csv', 'rb') as file:
+    LR = pd.read_csv("/content/Projecttest.csv")
+
 gender = ['male', 'female']
 Married = ['Yes', 'No']
 Dependents = ['1', '2', '3', '4', '5']
 Education = ['Graduation', 'Non Graduation']
-Employment = ['Yes', 'No']  # Change the variable name to Employment
+Employment = ['Yes', 'No']
 Credit_History = ['0', '1']
 Property_Area = ['Urban', 'Semiurban', 'Rural']
 
