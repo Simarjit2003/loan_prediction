@@ -54,10 +54,10 @@ if st.button('Predict Loan Approval'):
         'Credit_History': [Credit_History],
         'Property_Area': [Property_Area]
     }
-    user_input_df = pd.DataFrame(input_data)
+    #user_input_df = pd.DataFrame(input_data)
 
     # Make predictions using your model
-    prediction = LR.predict(user_input_df)
+    prediction = LR.predict(input_data)
 
     # Display the prediction result
     if prediction[0] == 1:
