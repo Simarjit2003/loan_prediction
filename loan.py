@@ -3,9 +3,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the trained model
-file_path = '/content/Projecttest.csv.pkl'
-with open('/content/Projecttest.csv.pkl') as file:
-    LR = pickle.load(file)
+
 
 gender = ['male', 'female']
 Married = ['Yes', 'No']
