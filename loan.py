@@ -2,7 +2,9 @@ import pickle
 import streamlit as st
 import pandas as pd
 
-
+# Load the trained model
+with open('/content/Projecttest.csv.pkl', 'rb') as file:
+    LR = pickle.load(file)
 
 gender = ['male', 'female']
 Married = ['Yes', 'No']
@@ -63,7 +65,3 @@ if st.button('Predict Loan Approval'):
         st.success('Loan Approved!')
     else:
         st.error('Loan Rejected!')
-
-
-
-
