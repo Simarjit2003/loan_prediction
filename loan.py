@@ -3,8 +3,8 @@ import streamlit as st
 import pandas as pd
 
 # Load the trained model
-file_path = '/content/Projecttest.csv.pkl'
-with open('/content/Projecttest.csv.pkl', 'rb') as file:
+file_path = 'C:/Users/arora/Desktop/loan.py'
+with open('C:/Users/arora/Desktop/loan.py', 'rb') as file:
     LR = pickle.load(file)
 
 gender = ['male', 'female']
