@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the trained model
-with open('/content/Projecttest.csv', 'rb') as file:
+with open('/content/Projecttest.csv') as file:
     LR = pd.read_csv("/content/Projecttest.csv")
 
 gender = ['male', 'female']
